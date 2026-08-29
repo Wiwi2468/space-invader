@@ -40,6 +40,7 @@ def move_aliens():
     for alien in aliens:
         alien.setx(alien.xcor() + random.randint(-20, 20))
         alien.sety(alien.ycor() + random.randint(-20, 20))
+        
         while alien.xcor() > 600 or alien.ycor() > 600:
             alien.setx(alien.xcor() + random.randint(-20, 20))
             alien.sety(alien.ycor() + random.randint(-20, 20))
